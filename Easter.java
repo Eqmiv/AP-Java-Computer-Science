@@ -1,8 +1,13 @@
 // Eliazar Montemayor IV
 // Your program will calculate the date Easter falls on a given year
+
+import java.util.Scanner;
+
 public class Easter{
     public static void main(String[] args){
-    int y = 2026;
+    System.out.println("Type in the year:");
+    Scanner scanner = new Scanner(System.in);
+    int y = scanner.nextInt();
     int a = y % 19;
     System.out.println("a = "+ a);
     int b = y / 100;
